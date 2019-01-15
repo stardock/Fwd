@@ -16,3 +16,6 @@ firewall-cmd --zone=public --permanent --add-port=444/udp
 firewall-cmd --permanent --add-masquerade  
 firewall-cmd --reload  
 firewall-cmd --zone=public --list-all  
+
+echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf  
+
