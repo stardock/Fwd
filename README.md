@@ -12,6 +12,7 @@ firewall-cmd --zone=public --permanent --add-port=1000-5000/tcp
 firewall-cmd --zone=public --permanent --add-port=1812-1814/tcp  
 firewall-cmd --zone=public --permanent --add-port=1812-1814/udp  
 firewall-cmd --zone=public --permanent --add-port=8443/tcp  
+firewall-cmd --zone=public --permanent --add-port=35601/tcp  
 firewall-cmd --permanent --add-masquerade  
 firewall-cmd --reload  
 firewall-cmd --zone=public --list-all  
