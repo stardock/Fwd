@@ -4,6 +4,7 @@ Firewall setup for Centos7
 
 firewall-cmd --zone=public --permanent --add-port=80/tcp  
 firewall-cmd --zone=public --permanent --add-port=888/tcp  
+firewall-cmd --zone=public --permanent --add-port=887/tcp  
 firewall-cmd --zone=public --permanent --add-port=8888/tcp  
 firewall-cmd --zone=public --permanent --add-port=400-500/tcp  
 firewall-cmd --zone=public --permanent --add-port=10443/tcp  
