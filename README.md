@@ -131,4 +131,7 @@ firewall-cmd --permanent --add-rich-rule="rule family='ipv4' source address='222
 firewall-cmd --permanent --add-rich-rule="rule family='ipv4' source address='222.94.212.231' drop"
 firewall-cmd --permanent --add-rich-rule="rule family='ipv4' source address='223.166.75.85' drop"
 ```  
+firewall-cmd --reload  
+firewall-cmd --list-rich-rules  
 
+Reference: https://www.sky8g.com/technology/402/  
