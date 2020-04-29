@@ -134,4 +134,7 @@ firewall-cmd --permanent --add-rich-rule="rule family='ipv4' source address='223
 firewall-cmd --reload  
 firewall-cmd --list-rich-rules  
 
+How to remove the block:  
+firewall-cmd --permanent --remove-rich-rule="rule family='ipv4' source address='192.168.254.201' reject"  
+
 Reference: https://www.sky8g.com/technology/402/  
