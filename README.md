@@ -1,23 +1,20 @@
-# fwd
-Firewall setup for Centos7
+# ufw
+Firewall setup for Ubuntu24 ufw
 
 ```  
-firewall-cmd --zone=public --permanent --add-port=80/tcp
-firewall-cmd --zone=public --permanent --add-port=888/tcp
-firewall-cmd --zone=public --permanent --add-port=887/tcp
-firewall-cmd --zone=public --permanent --add-port=8888/tcp
-firewall-cmd --zone=public --permanent --add-port=400-500/tcp
-firewall-cmd --zone=public --permanent --add-port=10443/tcp
-firewall-cmd --zone=public --permanent --add-port=10443/udp
-firewall-cmd --zone=public --permanent --add-port=1000-5000/tcp
-firewall-cmd --zone=public --permanent --add-port=1812-1814/tcp
-firewall-cmd --zone=public --permanent --add-port=1812-1814/udp
-firewall-cmd --zone=public --permanent --add-port=3389/tcp
-firewall-cmd --zone=public --permanent --add-port=8443/tcp
-firewall-cmd --zone=public --permanent --add-port=35601/tcp
-firewall-cmd --zone=public --permanent --add-masquerade
-firewall-cmd --reload
-firewall-cmd --zone=public --list-all
+ufw allow 80/tcp
+ufw allow 888/tcp
+ufw allow 887/tcp
+ufw allow 8888/tcp
+ufw allow 400-500/tcp
+ufw allow 10443/tcp
+ufw allow 10443/udp
+ufw allow 1000-5000/tcp
+ufw allow 1812-1814/tcp
+ufw allow 1812-1814/udp
+ufw allow 3389/tcp
+ufw allow 8443/tcp
+ufw allow 35601/tcp
 ```  
 
 echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf  
