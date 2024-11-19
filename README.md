@@ -15,8 +15,9 @@ ufw allow 1812:1814/udp
 ufw allow 3389/tcp
 ufw allow 8443/tcp
 ufw allow 35601/tcp
-ufw status
 ```  
+
+`ufw status`  
 
 echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf  
 
