@@ -17,7 +17,11 @@ ufw allow 8443/tcp
 ufw allow 35601/tcp
 ```  
 
-`ufw status`  
+```  
+ufw status verbose
+cat /etc/ufw/user.rules
+cat /etc/ufw/user6.rules
+```  
 
 echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf  
 
