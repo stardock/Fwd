@@ -1,3 +1,5 @@
+apt install net-tools -y
+
 # route
 
 ```  
