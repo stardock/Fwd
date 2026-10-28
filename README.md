@@ -3924,6 +3924,7 @@ route add -net 221.213.75.0/24 gw 127.0.0.1
 route add -net 222.79.48.0/24 gw 127.0.0.1
 route add -net 223.166.74.0/24 gw 127.0.0.1
 route add -net 223.166.75.0/24 gw 127.0.0.1
+route add -net 93.152.215.0/24 gw 127.0.0.1
 ```  
 
 nft list ruleset  
